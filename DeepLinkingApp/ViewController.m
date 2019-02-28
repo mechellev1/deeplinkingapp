@@ -20,10 +20,16 @@
 }
 
 - (IBAction)openOtherAppTapped:(id)sender {
-    NSString *customURL = @"urlschemeapp://";
+    NSString *customURL = @"urlschemeapp://test_page/one?token=12345&domain=foo.com";
     
     if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:customURL]])
     {
+        
+        //if you want to send parameters, you have to send them through the URL
+        //NSString *customURL = @"iOSDevTips://?token=123abct&registered=1";
+        //scheme://host/path?query
+        
+        
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:customURL] options:@{} completionHandler:nil];
        
         
