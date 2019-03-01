@@ -20,7 +20,7 @@
 }
 
 - (IBAction)openOtherAppTapped:(id)sender {
-    NSString *customURL = @"urlschemeapp://test_page/one?token=12345&domain=foo.com";
+    NSString *customURL = @"v1sportszype://";
     
     if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:customURL]])
     {

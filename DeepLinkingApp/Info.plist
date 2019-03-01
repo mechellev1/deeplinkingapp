@@ -60,6 +60,7 @@
     <key>LSApplicationQueriesSchemes</key>
     <array>
         <string>urlschemeapp</string>
+        <string>V1SportsZype</string>
     </array>
 </dict>
 </plist>
